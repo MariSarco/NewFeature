@@ -2,6 +2,26 @@
     background: #2e2e2e;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 10%;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.section_icon {
+    height: 150px;
+    width: 150px;
+    background-color: #202021;
+    clip-path: circle(40%);
+}
+
+.section_text {
+    width: 555px;
 }

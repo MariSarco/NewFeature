@@ -4,3 +4,10 @@
     background: linear-gradient(40deg, #ff4800, #fbd12e);
     clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%); 
 }
+
+.circle {
+    display: inline-block;
+    padding: 6px;
+    background: linear-gradient(40deg, #ff4800, #fbd12e);
+    clip-path: circle(40%);
+}

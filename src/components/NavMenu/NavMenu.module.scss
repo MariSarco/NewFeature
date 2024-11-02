@@ -1,0 +1,25 @@
+.container {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+
+    .list__links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 20px;
+      
+        .link {
+          color: white;
+          font-size: 18px;
+        }
+        .link:hover {
+          border-bottom: 3px solid white;
+        }
+        .active {
+          color: white;
+          border-bottom: 3px solid #fbd12e;
+        }
+      }
+}
