@@ -12,5 +12,5 @@ export default defineConfig({
       },
     }),
   ],
-  base: 'NewFeature'
+  base: process.env.NODE_ENV === 'production' ? '/NewFeature/' : '/',
 });

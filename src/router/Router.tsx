@@ -17,5 +17,6 @@ export const router = createBrowserRouter(
       <Route path="/projects" element={<LazyProjectsPage />} />
       <Route path="/contacts" element={<LazyContactsPage />} />
     </Route>
-  )
+  ),
+  { basename: process.env.NODE_ENV === "production" ? "/NewFeature/" : "/" }
 );
