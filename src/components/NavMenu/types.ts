@@ -1,5 +1,5 @@
-export interface NavigationLinks {
+export interface INavigationLinks {
   id: string;
-  link: string;
+  link: string | React.ReactNode;
   path: string;
 }

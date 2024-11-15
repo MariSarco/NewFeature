@@ -1,0 +1,15 @@
+.container {
+    background: none;
+    border: none;
+}
+
+.icon {
+    width: 2em;
+    height: 2em;
+    color: var(--textThemeColor);
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: var(--accent);
+}

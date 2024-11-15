@@ -1,13 +1,7 @@
-import MainBlock from "../../components/MainBlock/MainBlock";
-import WelcomBlock from "../../components/WelcomBlock/WelcomBlock";
+import Home from "../../components/Home/Home";
 
 const HomePage = () => {
-  return (
-    <>
-      <WelcomBlock />
-      <MainBlock />
-    </>
-  );
+  return <Home />;
 };
 
 export default HomePage;

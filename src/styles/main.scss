@@ -1,17 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Pacifico&display=swap');
 
 :root {
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  background-color: white;
+  --textThemeColor: black;
+  --pageNameColor: #f4f4f4;
+  --accent: #8cd9d6;
+}
+.dark {
+  background: black;
+  --textThemeColor: white;
+  --pageNameColor: #111111;
 }
 
 body {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  min-height: 100vh;
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1140px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+      max-width: 960px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+      max-width: 720px;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+      max-width: 540px;
+  }
 }
 
 a {
@@ -19,12 +45,13 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
 }
 ::-webkit-scrollbar-track {
   background: #202021;
 }
 ::-webkit-scrollbar-thumb {
-  background: #fbd12e;
+  background: var(--accent);;
 }
+

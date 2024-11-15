@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    min-width: 50%;
+    height: 40%;
+    border: 2px rgba(255, 255, 255, 0.153) solid;
+}
+
+.inner_container * {
+    z-index: 1;
+}
+
+.inner_container::before {
+    content: '';
+    background-image: url("public/image/blockBackground.png");
+    background-size: 200%;
+    position:  absolute;
+    top: 0;
+    left: 50%;
+    filter: opacity(15%);
+    width: 30%;
+    height: 99.7%;
+    border: 2px rgba(255, 255, 255, 0.153) solid;
+}
+
+.block{
+    background: rgb(10 17 43);
+    width: 30%;
+    min-height: 90%;
+}
+

@@ -5,6 +5,7 @@ import styles from "./MainBlock.module.scss";
 const MainBlock = () => {
   return (
     <div id='MainBlock' className={styles.container}>
+      
       <div className={styles.section}>
         <DesignBlock />
         <BorderSimulation figure="circle">

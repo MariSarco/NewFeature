@@ -29,11 +29,11 @@ const ParticlesLayer = () => {
       fullScreen: {
         enable: false,
       },
-      background: {
-        color: {
-          value: "#242424",
-        },
-      },
+      // background: {
+      //   color: {
+      //     value: "#242424",
+      //   },
+      // },
       fpsLimit: 120,
       interactivity: {
         events: {
@@ -75,7 +75,7 @@ const ParticlesLayer = () => {
           value: "#ffffff",
         },
         links: {
-          color: "#fbd12e",
+          color: "#a0a0a0",
           distance: 300,
           enable: true,
           opacity: 0.5,
@@ -91,7 +91,7 @@ const ParticlesLayer = () => {
             default: OutMode.out,
           },
           random: false,
-          speed: 1.2,
+          speed: 0.4,
           straight: false,
         },
         number: {
@@ -99,7 +99,7 @@ const ParticlesLayer = () => {
             enable: true,
             area: 1000,
           },
-          value: 40,
+          value: 50,
         },
         opacity: {
           value: 0,

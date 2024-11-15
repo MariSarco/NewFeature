@@ -1,5 +1,4 @@
 import Header from "../Header/Header.tsx";
-import Footer from "../Footer/Footer.tsx";
 import styles from "./App.module.scss";
 import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
@@ -15,7 +14,6 @@ const App = () => {
           <Outlet />
         </Suspense>
       </main>
-      <Footer />
     </div>
   );
 };

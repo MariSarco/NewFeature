@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
 import styles from "./NavMenu.module.scss";
-import { NavigationLinks } from "./types";
+import { INavigationLinks } from "./types";
+import { ThemeToggle } from "../helpers/Theme/ThemeToggle";
 
-const navLinks: NavigationLinks[] = [
-  { id: '1', link: 'Home', path: '/' },
+const navLinks: INavigationLinks[] = [
+  { id: '1', link: 'About', path: '/about' },
   { id: '2', link: 'Projects', path: '/projects' },
   { id: '3', link: 'Contacts', path: '/contacts' },
 ];
@@ -23,6 +24,7 @@ const NavMenu = () => {
           </NavLink>
         ))}
       </div>
+      <ThemeToggle />
   </div>;
 };
 

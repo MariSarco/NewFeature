@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  column-gap: 20px;
+
+}
+
+.link svg{
+  height: 2em;
+  width:  2em;
+}
+
+.link svg path{
+  fill: var(--textThemeColor);
+}

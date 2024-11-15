@@ -8,7 +8,6 @@ import {
   MouseParallaxContainer,
 } from "react-parallax-mouse";
 import Tilt from "react-parallax-tilt";
-import { Figures } from "../helpers/Enums/variables.constants";
 
 const DesignBlock = () => {
   const [show, setShow] = useState(false);
@@ -18,12 +17,6 @@ const DesignBlock = () => {
 
   const propsText = useSpring({
     opacity: show ? 1 : 0,
-  });
-
-  const propsInnerBlock = useSpring({
-    clipPath: show
-      ? Figures.trapezoid
-      : Figures.trapezoidDefault,
   });
 
   const showHandler = () => {
@@ -42,7 +35,7 @@ const DesignBlock = () => {
       <MouseParallaxContainer
         className="parallax"
         containerStyle={{
-          borderRadius: "30px"
+          borderRadius: "30px",
         }}
         globalFactorX={0.3}
         globalFactorY={0.3}
@@ -53,7 +46,7 @@ const DesignBlock = () => {
           factorY={0.3}
           className={styles.mouse_parallax_child}
           style={{
-            transform: 'scale(1.2)'
+            transform: "scale(1.2)",
           }}
         />
         <div className={styles.container} onClick={showHandler}>
@@ -61,12 +54,7 @@ const DesignBlock = () => {
             className={styles.inner_container}
             style={propsOuterBlock}
           >
-            <SmoothingCorners>
-              <animated.div
-                className={styles.image_block}
-                style={propsInnerBlock}
-              />
-            </SmoothingCorners>
+            <div className={styles.image_block} />
             <div className={styles.image_window}>
               <BorderSimulation figure="hexagon">
                 <SmoothingCorners>

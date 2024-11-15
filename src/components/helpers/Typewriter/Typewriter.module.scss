@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50px;
+    user-select: none;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    animation: border 1s linear infinite;
+    padding-right: 10px;
+    text-align: left;
+	
+    @keyframes border {
+        from {border-right: 4px var(--textThemeColor)}         
+        to {border-right: 4px var(--textThemeColor) solid}
+    }
+}
