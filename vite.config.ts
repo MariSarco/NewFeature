@@ -11,5 +11,6 @@ export default defineConfig({
         exportType: "default",
       },
     }),
-  ]
+  ],
+  base: 'newfeature'
 });
