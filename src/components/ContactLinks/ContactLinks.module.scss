@@ -1,8 +1,9 @@
 .container {
   display: flex;
-  column-gap: 20px;
+  column-gap: 45px;
 
 }
+
 
 .link svg{
   height: 2em;
@@ -11,4 +12,12 @@
 
 .link svg path{
   fill: var(--textThemeColor);
+}
+
+.link:hover svg path{
+  fill: var(--accent);
+}
+
+.link:hover svg{
+  transform: scale(1.2);
 }

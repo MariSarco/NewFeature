@@ -3,7 +3,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {
   MoveDirection,
   OutMode,
-  type Container,
+  // type Container,
   type ISourceOptions,
 } from "@tsparticles/engine";
 import { loadFull } from "tsparticles";
@@ -20,9 +20,9 @@ const ParticlesLayer = () => {
     });
   }, []);
 
-  const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log(container);
-  };
+  // const particlesLoaded = async (container?: Container): Promise<void> => {
+  //   console.log(container);
+  // };
 
   const options: ISourceOptions = useMemo(
     () => ({
@@ -120,7 +120,7 @@ const ParticlesLayer = () => {
     return (
       <Particles
         id="tsparticles"
-        particlesLoaded={particlesLoaded}
+        // particlesLoaded={particlesLoaded}
         options={options}
         className={styles.main}
       />

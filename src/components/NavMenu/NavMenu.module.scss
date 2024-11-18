@@ -18,9 +18,9 @@
         }
         .link:hover {
           color: var(--accent);
+          transform: scale(1.2);
         }
         .active {
-          // display: none;
           color: var(--accent);
         }
       }

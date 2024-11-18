@@ -1,0 +1,81 @@
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.container label{
+  position: absolute;
+  left: 0; 
+  top: 0;
+  z-index: 1;
+  border-radius: 30px;
+  padding: 0 10px;
+  color: var(--textThemeColor);
+  background: var(--backgroundTheme);
+  transform: translate(14px, 22px) scale(1.2);
+}
+
+.container p{
+  position: absolute;
+  bottom: -45px;
+  color: red;
+  font-size: 1em;
+  line-height: 1.5;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.container input, .container textarea {
+  background: none;
+  resize: none;
+  padding: 24px 21px;
+  border: 1px solid var(--textThemeColor);
+  color: var(--textThemeColor);
+  border-radius: 5px;
+}
+
+.container textarea {min-height: 100px;}
+
+.container input:focus ~ label, .container textarea:focus ~ label{
+  animation: move 300ms forwards;
+  @keyframes move {
+    to {transform: translate(14px, -10px) scale(1);}
+  }
+}
+
+.container input:focus, .container textarea:focus{
+  outline: 0;
+}
+
+.error_container{
+  animation: shake 7s 0s both infinite;
+
+  @keyframes shake {
+    0%, 20% {
+      transform: translate3d(0, 0, 0);
+    }
+    10%, 14%, 18%, 2%, 6% {
+      transform: translate3d(-5px, 0, 0);
+    }
+    12%, 16%, 4%, 8% {
+      transform: translate3d(5px, 0, 0);
+    }
+  }
+}
+
+.error_input {
+  border: 1px solid red !important;
+  border-radius: 5px;
+}
+
+.error_label {
+  color: red !important;
+}
+
+.value_label {
+  transform: translate(14px, -10px) scale(1) !important;
+}
+

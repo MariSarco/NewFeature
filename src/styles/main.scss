@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Pacifico&display=swap');
 
 :root {
-  background-color: white;
+  --backgroundTheme: white;
   --textThemeColor: black;
+  --textThemeColorReverse: white;
   --pageNameColor: #f4f4f4;
-  --accent: #8cd9d6;
+  --accent: #2C90B6;
+  background: var(--backgroundTheme);
 }
 .dark {
-  background: black;
+  --backgroundTheme: black;
   --textThemeColor: white;
-  --pageNameColor: #111111;
+  --textThemeColorReverse: black;
+  --pageNameColor: #111111; //#2c73b51f
+  background: var(--backgroundTheme);
 }
 
 body {
@@ -42,6 +46,12 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  user-select: none;
 }
 
 ::-webkit-scrollbar {

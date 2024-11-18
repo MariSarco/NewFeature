@@ -7,9 +7,7 @@ const Projects = () => {
     <div className={styles.container}>
       <PageName pageName="Projects" />
       <div className={styles.inner_container}>
-        <div>
-          <h1>Projects</h1>
-        </div>
+        <h1>Projects</h1>
         <ContactLinks />
       </div>
     </div>
